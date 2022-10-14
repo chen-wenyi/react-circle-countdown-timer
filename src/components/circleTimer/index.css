@@ -1,0 +1,67 @@
+
+.countdown-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.circle-container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.semi-circle {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transform-origin: right center;
+}
+
+.semi-circle-1 {
+    background-color: aqua;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+.semi-circle-2 {
+    background-color: aqua;
+    z-index: 3;
+}
+
+.overlay {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+.outermost-circle {
+    position: absolute;
+    margin: 0 auto;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 5;
+}
+
+.remaining-time {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    font-weight: 600;
+    color:aqua
+}
